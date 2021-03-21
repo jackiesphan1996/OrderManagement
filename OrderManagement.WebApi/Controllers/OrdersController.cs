@@ -74,7 +74,7 @@ namespace OrderManagement.WebApi.Controllers
 
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetOrder", new { id = order.Id }, order);
+            return Ok();
         }
     }
 
